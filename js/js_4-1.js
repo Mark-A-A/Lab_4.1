@@ -1,6 +1,6 @@
-var rows = document.getElementsByClassName("tablerow"); 
+var removeButtons = document.getElementsByClassName("btn btn-danger"); 
 var timeInterval;
-
+var tableRows;
 
 //Timer Variables
 var secondsCount;
@@ -8,17 +8,24 @@ var timerInterval;
 var randomTime;
 
 function addRow (){
-   console.log(rows);
-   rows.push();
+   //console.log(tableRows);
+   //rows.push();
    //for (i =){
 //
    //};
     alert("Adding A Last Row!");
 };
 
+
+for(var i = 0; i < removeButtons.length; i++) {           //Adding functionality to each button
+  removeButtons[i].addEventListener("click", removeRow);
+}
+
+
 function removeRow () {
  //
- alert("Removing Last Row!");
+ alert("Removing This Row NOW!");
+ this.parentNode.parentNode.remove();
 };
 
 
