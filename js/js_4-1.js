@@ -1,6 +1,12 @@
 var rows = document.getElementsByClassName("tablerow"); 
 var timeInterval;
 
+
+//Timer Variables
+var secondsCount;
+var timerInterval;
+var randomTime;
+
 function addRow (){
    console.log(rows);
    rows.push();
@@ -18,7 +24,7 @@ function removeRow () {
 
 function removeFirstRow() {
   //for (var i = 0; .length; i++) {
-//
+   //
   //};
   alert("Removing First Row Randomly!");
  
